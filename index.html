@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>What sanrio character are you?</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script  type="text/javascript" src="main.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <style>
+       body {background-color: #F7C1C1;}
+       .imagen{
+        border-radius: 25%;
+       }
+   </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title-container">
+            <div class="image-container">
+                <img  src="img/corazon.gif">
+            </div>
+            <h1 id="the-title">What sanrio character are you?</h1>
+            <div class="image-container">
+                <img  src="img/corazon.gif">
+            </div>
+    </div>
+    
+    <div>
+    <marquee behavior="scroll" direction="left" style="color:white; background:black; border:rgb(236, 227, 232) 2px solid; width: 100%;"
+    >psspss click on the images pls and ty ............. if you don't know your mbti you can click on the button below and figure it out :>></marquee>  
+    </div>
+
+    <button class="button" onclick="loadDoc()">Click me to find your mbti!! :>> </button>
+
+    <div id="content-container"></div>
+      <table class="tabla-container table" style="margin: 20px 0 0 0">
+        <tr>
+          <td>
+            <p class="the-subtitle">EXPLORERS</p>
+          </td>
+           <td>
+            <p class="the-subtitle">ESTP</p>
+            <img class="imagen push" src="img/ESTP.jpg">
+            <p class="push-contenido" style="display:none;">You are Chococat
+              <ul class="push-contenido" style="display:none">
+                <li>Outgoing</li>
+                <li>Realistic</li>
+                <li>Curious</li>
+                <li>Spontaneous</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ESFP</p>
+            <img class="imagen push" src="img/ESFP.jpg" id="push">
+            <p class="push-contenido" style="display:none;">You are Pompompurin
+              <ul class="push-contenido" style="display:none">
+                <li>Playful</li>
+                <li>Enthusiastic</li>
+                <li>Friendly</li>
+                <li>Spontaneous</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ISTP</p>
+            <img class="imagen push" src="img/ISTP.jpg" id="push">
+            <p class="push-contenido" style="display:none;">You are Badtz-Maru
+              <ul class="push-contenido" style="display:none">
+                <li>Realistic</li>
+                <li>Independent</li>
+                <li>Adventurous</li>
+                <li>Logical</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ISFP</p>
+            <img class="imagen push" src="img/ISFP.jpg" id="push">
+            <p class="push-contenido" style="display:none;">You are Kuromi
+              <ul class="push-contenido" style="display:none">
+                <li>Gentle</li>
+                <li>Sensitive</li>
+                <li>Helpful</li>
+                <li>Realistic</li>
+              </ul>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <p class="the-subtitle">ANALYSTS</p>
+          </td>
+          <td>
+            <p class="the-subtitle">INTJ</p>
+            <img class="imagen push" src="img/INTJ.jpg" id="push">
+            <p class="push-contenido" style="display:none;">You are Berry
+              <ul class="push-contenido" style="display:none">
+                <li>Innovative</li>
+                <li>Independent</li>
+                <li>Strategic</li>
+                <li>Insightful</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">INTP</p>
+            <img class="imagen push" src="img/INTP.jpg" id="push">
+            <p class="push-contenido" style="display:none;">You are Gudetama
+              <ul class="push-contenido" style="display:none">
+                <li>Intellectual</li>
+                <li>Reserved</li>
+                <li>Flexible</li>
+                <li>Imaginative</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ENTJ</p>
+            <img class="imagen push" src="img/ENTJ.png" id="push">
+            <p class="push-contenido" style="display:none;">You are Milk
+              <ul class="push-contenido" style="display:none">
+                <li>Strategic</li>
+                <li>Outgoing</li>
+                <li>Ambitious</li>
+                <li>Independent</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ENTP</p>
+            <img class="imagen push" src="img/ENTP.png" id="push">
+            <p class="push-contenido" style="display:none;">You are KIMIRI-chan
+              <ul class="push-contenido" style="display:none">
+                <li>Inventive</li>
+                <li>Enthusiastic</li>
+                <li>Inquisitive</li>
+                <li>Versatile</li>
+              </ul>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="the-subtitle">DIPLOMATS</p>
+          </td>
+          <td>
+            <p class="the-subtitle">INFJ</p>
+            <img class="imagen push" src="img/INFJ.jpg">
+            <p class="push-contenido" style="display:none;">You are Tuxedosam
+              <ul class="push-contenido" style="display:none">
+                <li>Idealistic</li>
+                <li>Organized</li>
+                <li>Dependable</li>
+                <li>Compassionate</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">INFP</p>
+            <img class="imagen push" src="img/INFP.jpg">
+            <p class="push-contenido" style="display:none;">You are Cinnamoroll
+              <ul class="push-contenido" style="display:none">
+                <li>Sensitive</li>
+                <li>Creative</li>
+                <li>Caring</li>
+                <li>Loyal</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ENFJ</p>
+            <img class="imagen push" src="img/ENFJ.jpg">
+            <p class="push-contenido" style="display:none;">You are Roonroonlulu
+              <ul class="push-contenido" style="display:none">
+                <li>Caring</li>
+                <li>Enthusiastic</li>
+                <li>Idealistic</li>
+                <li>Responsible</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ENFP</p>
+            <img class="imagen push" src="img/ENFP.jpg">
+            <p class="push-contenido" style="display:none;">You are Keroppi
+              <ul class="push-contenido" style="display:none">
+                <li>Enthusiastic</li>
+                <li>Creative</li>
+                <li>Supportive</li>
+                <li>Playful</li>
+              </ul>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="the-subtitle">SENTINELS</p>
+          </td>
+          <td>
+            <p class="the-subtitle">ISTJ</p>
+            <img class="imagen push" src="img/ISTJ.jpg">
+            <p class="push-contenido" style="display:none;">You are Konmi
+              <ul class="push-contenido" style="display:none">
+                <li>Responsible</li>
+                <li>Sincere</li>
+                <li>Analytical</li>
+                <li>Reserved</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ISFJ</p>
+            <img class="imagen push" src="img/ISFJ.jpg">
+            <p class="push-contenido" style="display:none;">You are My melody
+              <ul class="push-contenido" style="display:none">
+                <li>Warm</li>
+                <li>Considerate</li>
+                <li>Gentle</li>
+                <li>Responsible</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ESTJ</p>
+            <img class="imagen push" src="img/ESTJ.jpg">
+            <p class="push-contenido" style="display:none;">You are Buchiusa
+              <ul class="push-contenido" style="display:none">
+                <li>Outgoing</li>
+                <li>Analytical</li>
+                <li>Dependable</li>
+                <li>Realistic</li>
+              </ul>
+            </p>
+          </td>
+          <td>
+            <p class="the-subtitle">ESFJ</p>
+            <img class="imagen push" src="img/ESFJ.jpg">
+            <p class="push-contenido" style="display:none;">You are Hello Kitty
+              <ul class="push-contenido" style="display:none">
+                <li>Friendly</li>
+                <li>Outgoing</li>
+                <li>Reliable</li>
+                <li>Organized</li>
+              </ul>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>
