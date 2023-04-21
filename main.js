@@ -1,19 +1,19 @@
 // JavaScript
 function loadDoc() {
-  var xhr = new XMLHttpRequest();
   var url = "https://www.16personalities.com/es/test-de-personalidad";
-  var link = document.getElementById("link");
+  var link = $("#link");
   
-  xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      link.href = url;
-      link.innerHTML = "16 personalities test here";
-      link.style.display = "block";
+  $.ajax({
+    url: url,
+    type: "GET",
+    async: true,
+    success: function(response) {
+      link.attr("href", url);
+      link.html("16 personalities test here");
+      link.css("display", "block");
+      link.css("color","black");
     }
-  };
-  
-  xhr.open("GET", url, true);
-  xhr.send();
+  });
 }
 
  $(document).ready(function() {
